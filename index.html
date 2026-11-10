@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="rhino">let's play a game</div>
+
+    <div class="buttonz">
+        <button id="melody">(01) click me</button>
+
+        <script>
+            function big() {
+                rhino.textContent = "you won!"
+                rhino.style.backgroundColor= 'lightgreen'
+                rhino.style.fontSize = Math.random()*50 + "px"
+                rhino.classList.toggle('broccoli')
+            }
+
+            melody.addEventListener('click', big)
+
+            // big()
+
+            // setTimeout(big, 1000)
+
+            // setInterval(big, 1000)
+
+        </script>
+
+        <button id="kuromi">(02) click me</button>
+
+        <script>
+            rhino.style.borderRadius = 50+"px"
+            rhino.style.textAlign = "center"
+            rhino.style.textColor="rgb(244, 205, 211)"
+            function bigger() {
+                rhino.textContent = "you lost..."
+                rhino.style.backgroundColor= 'grey'
+                rhino.style.fontSize = Math.random()*50 + "px"
+                rhino.classList.toggle('lettuce')
+            }
+
+            kuromi.addEventListener('click', bigger)
+
+        </script>
+</div>
+
+    
+</body>
+</html>
